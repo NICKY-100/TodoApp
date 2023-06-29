@@ -59,6 +59,14 @@ describe('controller', function () {
 	});
 
 	it('should show entries on start-up', function () {
+
+		setUpModel([]);
+
+		subject.setView('');
+
+		expect(view.render).toHaveBeenCalledWith('showEntries', []);
+
+
 		// TODO: write test
 	});
 
